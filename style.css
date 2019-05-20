@@ -3,10 +3,32 @@ body {
     color: white;
     text-align: center;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    cursor: wait;
 }
 #content {
     background: #000 url("./Senpai.png") no-repeat center center;
     display: block;
     width: 100%;
     height: 60vh;
+}
+blink {
+    animation: blinker 1.0s step-start infinite;
+}
+@keyframes blinker {  
+    50% { opacity: 0; }
+}
+.cmd {
+    font-family: 'Courier New', Courier, monospace;
+    border-color: darkslategrey;
+    border-width: 1px;
+    border-style: outset;
+    cursor: text;
+}
+sad {
+    color: #050505;
 }
