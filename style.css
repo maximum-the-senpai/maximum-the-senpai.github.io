@@ -1,0 +1,12 @@
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#content {
+    background: #000 url("./Senpai.png") no-repeat center center;
+    display: block;
+    width: 100%;
+    height: 60vh;
+}
